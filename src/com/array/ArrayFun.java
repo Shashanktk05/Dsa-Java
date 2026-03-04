@@ -1,8 +1,8 @@
-package com.pratice.array;
+package com.array;
 
 import java.util.Scanner;
 
-public class ArrayTravese {
+public class ArrayFun {
 
     public static void insertElements(int [] arr){
         Scanner s = new Scanner(System.in);
@@ -18,6 +18,21 @@ public class ArrayTravese {
         }
         System.out.println();
     }
+    public static int sumElements(int [] arr){
+        int sum=0;
+        for (int i = 0; i < arr.length; i++) {
+            sum+=arr[i];
+        }
+        return sum;
+    }
+    public static int sumOfEvenElements(int [] arr){
+        int sum=0;
+        for (int i = 0; i < arr.length;i+=2) {
+            sum+=arr[i];
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of array: ");

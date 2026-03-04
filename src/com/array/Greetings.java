@@ -1,4 +1,4 @@
-package com.pratice.array;
+package com.array;
 
 public class Greetings {
     public static void main(String[] args) {
