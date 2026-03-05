@@ -4,12 +4,12 @@ import com.digits.DigitFun;
 
 import java.util.Scanner;
 
-public class SumOfOddDigits {
+public class CountingDigits {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Number");
+        System.out.println("Enter the number:");
         int n = sc.nextInt();
-        int res= DigitFun.sumOfOddDigits(n);
-        System.out.println("The sum of odd digits is : "+ res);
+        int count =DigitFun.countDigits(n);
+        System.out.println("Count : "+count);
     }
 }
