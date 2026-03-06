@@ -1,5 +1,7 @@
 package com.digits;
 
+import java.util.Scanner;
+
 public class DigitFun {
 
     public static int sumOfOddDigits(int n){
@@ -17,7 +19,7 @@ public class DigitFun {
         if (a<2) {
             return false;
         }
-        for (int i = 2; i*i < a; i++) {
+        for (int i = 2; i*i <= a; i++) {
             if(a%i==0){
                 return false;
             }
