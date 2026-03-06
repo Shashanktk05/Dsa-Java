@@ -1,6 +1,5 @@
 package com.digits;
 
-import java.util.Scanner;
 
 public class DigitFun {
 
@@ -36,7 +35,6 @@ public class DigitFun {
     public static int  countDigits(int n){
         int  count =0;
         while (n!=0){
-            int res = n%10;
             count++;
             n/=10;
         }

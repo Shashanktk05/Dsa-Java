@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ArrayFun {
     public static int largestElement(int[] arr){
        int large=arr[0];
-        for (int i = 0; i < arr.length; i++) {
+        for(int i = 0; i < arr.length; i++) {
             if(large<arr[i]){
                 large=arr[i];
             }
