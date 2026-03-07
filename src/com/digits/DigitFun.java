@@ -3,6 +3,18 @@ package com.digits;
 
 public class DigitFun {
 
+    public static boolean isArmStrong(int n){
+        int actual=n;
+        int sum = 0;
+        int count = DigitFun.countDigits(n);
+        while (n!=0){
+            int res = n %10;
+            sum = sum+(int)(Math.pow(res,count));
+            n/=10;
+        }
+        return sum == actual;
+    }
+
     public static int sumOfOddDigits(int n){
         int sum=0;
         while(n!=0){
