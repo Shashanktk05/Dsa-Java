@@ -1,6 +1,6 @@
 package com.dsa;
 
-import com.digits.DigitFun;
+import com.digits.DigitMeth;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class ArmStrongNo {
         System.out.println("Enter the Number");
         int n = sc.nextInt();
 
-        if(DigitFun.isArmStrong(n)){
+        if(DigitMeth.isArmStrong(n)){
             System.out.println("Yes it is ArmStrong Number");
         }else {
             System.out.println("No it is ArmStrong Number");

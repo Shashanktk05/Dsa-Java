@@ -1,5 +1,5 @@
 package com.dsa;
-import com.array.ArrayFun;
+import com.array.ArrayMeth;
 
 import java.util.Scanner;
 
@@ -9,9 +9,9 @@ public class SumOfEvenIndex {
         System.out.println("Enter the size of array : ");
         int n = sc.nextInt();
         int [] arr = new int[n];
-        ArrayFun.insertElements(arr);
-        ArrayFun.printElements(arr);
-        int res = ArrayFun.sumOfEvenElements(arr);
+        ArrayMeth.insertElements(arr);
+        ArrayMeth.printElements(arr);
+        int res = ArrayMeth.sumOfEvenElements(arr);
         System.out.println("The Sum of Even index elements are : "+res);
     }
 }

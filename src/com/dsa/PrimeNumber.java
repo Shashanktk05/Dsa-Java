@@ -1,6 +1,6 @@
 package com.dsa;
 
-import com.digits.DigitFun;
+import com.digits.DigitMeth;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class PrimeNumber {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number to be checked : ");
         int n = sc.nextInt();
-        if(DigitFun.checkPrime(n)){
+        if(DigitMeth.checkPrime(n)){
             System.out.println("The number is prime");
         }else {
             System.out.println("Not a prime number ");

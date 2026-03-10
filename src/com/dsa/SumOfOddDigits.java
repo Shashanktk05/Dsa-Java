@@ -1,6 +1,6 @@
 package com.dsa;
 
-import com.digits.DigitFun;
+import com.digits.DigitMeth;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class SumOfOddDigits {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Number");
         int n = sc.nextInt();
-        int res= DigitFun.sumOfOddDigits(n);
+        int res= DigitMeth.sumOfOddDigits(n);
         System.out.println("The sum of odd digits is : "+ res);
     }
 }

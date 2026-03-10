@@ -1,6 +1,6 @@
 package com.dsa;
 
-import com.digits.DigitFun;
+import com.digits.DigitMeth;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class CountingDigits {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number:");
         int n = sc.nextInt();
-        int count =DigitFun.countDigits(n);
+        int count = DigitMeth.countDigits(n);
         System.out.println("Count : "+count);
     }
 }

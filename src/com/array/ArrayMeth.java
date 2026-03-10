@@ -2,7 +2,63 @@ package com.array;
 
 import java.util.Scanner;
 
-public class ArrayFun {
+public class ArrayMeth {
+//
+//    public static int[] mergeArray(int [] arr,int[] arr2){
+//
+//    }
+    public static int secondSmallestPlusElement(int [] arr){
+        int smallest = arr[0];
+        int secondSmallest = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if(smallest > arr[i]){
+                secondSmallest = smallest;
+                smallest = arr[i];
+            } else if (secondSmallest>arr[i]) {
+                secondSmallest=arr[i];
+            }
+        }
+        return secondSmallest+smallest;
+    }
+
+    public static int secondSmallestElement(int [] arr){
+        int smallest = arr[0];
+        int secondSmallest = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if(smallest > arr[i]){
+                secondSmallest = smallest;
+                smallest = arr[i];
+            } else if (secondSmallest>arr[i]) {
+                secondSmallest=arr[i];
+            }
+        }
+        return secondSmallest;
+    }
+    public static int  LargePlusSecondLargest(int[] arr){
+        int large = arr[0];
+        int secondLarge = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if(large < arr[i]){
+                secondLarge=large;
+                large = arr[i];
+            } else if (secondLarge<arr[i]) {
+                secondLarge= arr[i];
+            }
+        }return large+secondLarge;
+    }
+    public static int secondLargestElement(int[] arr){
+        int large = arr[0];
+        int secondlarge=arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if(large < arr[i]){
+                secondlarge=large;
+                large = arr[i];
+            }else if (secondlarge<arr[i]){
+                secondlarge=arr[i];
+            }
+        }
+        return secondlarge;
+    }
     public static int largestElement(int[] arr){
        int large=arr[0];
         for(int i = 0; i < arr.length; i++) {
@@ -25,7 +81,9 @@ public class ArrayFun {
         if(arr.length==0)return 0;
         long product = 1;
         for (int i = 0; i < arr.length; i++) {
-            product*=arr[i];
+            if(arr[i]!=0){
+                product*=arr[i];
+            }
         }
         return product;
     }

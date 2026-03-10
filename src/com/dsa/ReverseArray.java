@@ -1,6 +1,6 @@
 package com.dsa;
 
-import com.array.ArrayFun;
+import com.array.ArrayMeth;
 
 public class ReverseArray {
     public static void printReverseArray(int [] arr){
@@ -9,9 +9,9 @@ public class ReverseArray {
         }
     }
     public static void main(String[] args) {
-        int [] arr =ArrayFun.create1DArray();
-        ArrayFun.insertElements(arr);
-        ArrayFun.printElements(arr);
+        int [] arr = ArrayMeth.create1DArray();
+        ArrayMeth.insertElements(arr);
+        ArrayMeth.printElements(arr);
         System.out.println("The reverse array is :");
         printReverseArray(arr);
     }

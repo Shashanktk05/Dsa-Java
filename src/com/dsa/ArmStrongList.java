@@ -1,6 +1,6 @@
 package com.dsa;
 
-import com.digits.DigitFun;
+import com.digits.DigitMeth;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class ArmStrongList {
         System.out.println("Enter the ending number");
         int num2= sc.nextInt();
         for(int i = num1 ; i<=num2;i++){
-            if (DigitFun.isArmStrong(i)){
+            if (DigitMeth.isArmStrong(i)){
                 System.out.println(i);
             }
         }

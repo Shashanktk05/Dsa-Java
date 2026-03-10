@@ -1,14 +1,14 @@
 package com.dsa;
 
-import com.array.ArrayFun;
+import com.array.ArrayMeth;
 
 public class LargestElement {
 
     public static void main(String[] args) {
-        int [] arr = ArrayFun.create1DArray();
-        ArrayFun.insertElements(arr);
-        ArrayFun.printElements(arr);
-        int res=ArrayFun.largestElement(arr);
+        int [] arr = ArrayMeth.create1DArray();
+        ArrayMeth.insertElements(arr);
+        ArrayMeth.printElements(arr);
+        int res= ArrayMeth.largestElement(arr);
         System.out.println("The Largest Element is : "+ res);
 
     }

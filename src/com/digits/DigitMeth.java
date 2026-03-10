@@ -1,12 +1,12 @@
 package com.digits;
 
 
-public class DigitFun {
+public class DigitMeth {
 
     public static boolean isArmStrong(int n){
         int actual=n;
         int sum = 0;
-        int count = DigitFun.countDigits(n);
+        int count = DigitMeth.countDigits(n);
         while (n!=0){
             int res = n %10;
             sum = sum+(int)(Math.pow(res,count));

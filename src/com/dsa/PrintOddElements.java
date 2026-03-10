@@ -1,6 +1,6 @@
 package com.dsa;
 
-import com.array.ArrayFun;
+import com.array.ArrayMeth;
 
 import java.util.Scanner;
 
@@ -18,8 +18,8 @@ public class PrintOddElements {
         System.out.println("Array Size : ");
         int n = sc.nextInt();
         int[] arr = new int [n];
-        ArrayFun.insertElements(arr);
-        ArrayFun.printElements(arr);
+        ArrayMeth.insertElements(arr);
+        ArrayMeth.printElements(arr);
         System.out.println("The odd elements are : ");
         printOddElements(arr);
 

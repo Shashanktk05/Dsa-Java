@@ -1,13 +1,13 @@
 package com.dsa;
 
-import com.array.ArrayFun;
+import com.array.ArrayMeth;
 
 public class ArrayProduct {
     public static void main(String[] args) {
-        int [] arr =ArrayFun.create1DArray();
-        ArrayFun.insertElements(arr);
-        ArrayFun.printElements(arr);
-        long res = ArrayFun.productElements(arr);
+        int [] arr = ArrayMeth.create1DArray();
+        ArrayMeth.insertElements(arr);
+        ArrayMeth.printElements(arr);
+        long res = ArrayMeth.productElements(arr);
         System.out.println("Product is : "+res);
     }
 }

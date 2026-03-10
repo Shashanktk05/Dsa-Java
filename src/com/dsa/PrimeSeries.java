@@ -1,6 +1,6 @@
 package com.dsa;
 
-import com.digits.DigitFun;
+import com.digits.DigitMeth;
 
 import java.util.Scanner;
 
@@ -11,6 +11,6 @@ public class PrimeSeries {
         int num1 = sc.nextInt();
         System.out.println("Enter the second no");
         int num2 = sc.nextInt();
-        DigitFun.sequencePrime(num1,num2);
+        DigitMeth.sequencePrime(num1,num2);
     }
 }
