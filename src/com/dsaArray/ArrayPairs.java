@@ -2,9 +2,6 @@ package com.dsaArray;
 
 import com.array.ArrayMeth;
 
-
-
-
 public class ArrayPairs {
     public static void printArrayPairs(int[] arr){
         System.out.println("Array pairs are");

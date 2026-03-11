@@ -7,6 +7,16 @@ public class ArrayMeth {
 //    public static int[] mergeArray(int [] arr,int[] arr2){
 //
 //    }
+public static void pairsEqualsToK(int[] arr , int k){
+    System.out.println("The Pairs are :");
+    for (int i = 0; i < arr.length; i++) {
+        for (int j = i+1; j < arr.length; j++) {
+            if (arr[i]+arr[j]==k){
+                System.out.println(arr[i]+" "+arr[j]);
+            }
+        }
+    }
+}
     public static int secondSmallestPlusElement(int [] arr){
         int smallest = arr[0];
         int secondSmallest = arr[0];
