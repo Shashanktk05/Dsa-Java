@@ -1,4 +1,4 @@
-package com.dsaArray;
+package com.arrayPairs;
 
 import com.array.ArrayMeth;
 
