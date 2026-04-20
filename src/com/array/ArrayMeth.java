@@ -24,7 +24,7 @@ public static void pairsEqualsToK(int[] arr , int k){
             if(smallest > arr[i]){
                 secondSmallest = smallest;
                 smallest = arr[i];
-            } else if (secondSmallest>arr[i]) {
+            } else if (secondSmallest>arr[i] && smallest!=arr[i]) {
                 secondSmallest=arr[i];
             }
         }
@@ -38,7 +38,7 @@ public static void pairsEqualsToK(int[] arr , int k){
             if(smallest > arr[i]){
                 secondSmallest = smallest;
                 smallest = arr[i];
-            } else if (secondSmallest>arr[i]) {
+            } else if (secondSmallest>arr[i] && arr[i]!=smallest) {
                 secondSmallest=arr[i];
             }
         }
@@ -51,7 +51,7 @@ public static void pairsEqualsToK(int[] arr , int k){
             if(large < arr[i]){
                 secondLarge=large;
                 large = arr[i];
-            } else if (secondLarge<arr[i]) {
+            } else if (secondLarge<arr[i] && arr[i]!=large) {
                 secondLarge= arr[i];
             }
         }return large+secondLarge;
@@ -63,7 +63,7 @@ public static void pairsEqualsToK(int[] arr , int k){
             if(large < arr[i]){
                 secondlarge=large;
                 large = arr[i];
-            }else if (secondlarge<arr[i]){
+            }else if (secondlarge<arr[i] && arr[i]!=large){
                 secondlarge=arr[i];
             }
         }
