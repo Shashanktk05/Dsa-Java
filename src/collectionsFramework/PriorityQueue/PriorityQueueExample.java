@@ -16,5 +16,6 @@ public class PriorityQueueExample {
         System.out.println(pq.poll());
         System.out.println(pq.poll());     //null
 
+
     }
 }
