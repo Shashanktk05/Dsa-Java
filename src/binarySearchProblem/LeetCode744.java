@@ -1,0 +1,31 @@
+package binarySearchProblem;
+
+public class LeetCode744 {
+
+    public static char nextGreatestLetter(char[] letters, char target) {
+
+        int st =0;
+        int end=letters.length-1;
+        // if(letters[letters.length-1]<=target){
+        //     return letters[0];
+        // }
+        while(st<=end){
+            int mid=st+(end-st)/2;
+            if(letters[mid]<=target){
+                st=mid+1;
+            }else{
+                end=mid-1;
+            }
+        }
+        // return letters[st];
+        // return st<letters.length?letters[st]:letters[0];
+        return letters[st%letters.length];
+
+    }
+
+    public static void main(String[] args) {
+        char [] arr = {'c','f','j'};
+        System.out.println( nextGreatestLetter(arr,'a'));
+    }
+
+}
