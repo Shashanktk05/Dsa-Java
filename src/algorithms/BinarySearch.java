@@ -26,7 +26,7 @@ public class BinarySearch {
         int [] arr ={1, 2, 3, 5, 6, 22, 26, 64, 66, 88};
 
 
-        System.out.println(find(arr,6));
+        System.out.println(find(arr,0));
 
     }
 

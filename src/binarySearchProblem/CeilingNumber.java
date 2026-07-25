@@ -19,12 +19,12 @@ public class CeilingNumber {
         }
         
         
-        return arr[st];
+        return (st<arr.length)?arr[st]:-1;
     }
 
     public static void main(String[] args) {
-            int [] arr={1,2,6,8,9,11,22,66,555};
-        System.out.println(celingNumber(arr,23));;
+            int [] arr={1,2,6,8,9,11,22,66,555,55555};
+        System.out.println(celingNumber(arr,0));;
     }
 
 
